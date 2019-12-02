@@ -1,0 +1,149 @@
+<div id="duibi">
+    <div id="mingzi">
+        <div id="cailiao">材料对比</div>
+    <div id="bianji">
+            <nz-switch [(ngModel)]="switchValue"></nz-switch>
+      编辑模式</div>
+    </div>
+<div id="waibian">
+    <nz-table #borderedTable #colSpanTable [nzData]="[{}]" nzBordered #headerTable  [nzScroll]="{ y: '600px' }">
+    <thead>
+      <tr>
+        <th nzWidth="150px">
+            <div  id="xinxi" >材料信息</div>
+            <div id="shanchu">删除空白项</div>
+            <div id="bs">标示全部项</div>
+        </th>
+        <th nzWidth="150px">
+                <div id="paihao">DC01</div>
+                <div id="houdu">0.1mm</div>
+                <div id="mingcheng">邯钢</div>   
+        </th>      
+        <th nzWidth="150px">
+                <div id="paihao">DC02</div>
+                <div id="houdu">0.1mm</div>
+                <div id="mingcheng">马钢</div>  
+        </th>
+        <th nzWidth="150px">
+            <div id="paihao">DC02</div>
+            <div id="houdu">0.1mm</div>
+            <div id="mingcheng">马钢</div>
+        </th>
+        <th nzWidth="150px">
+                <div id="paihao">DC02</div>
+                <div id="houdu">0.1mm</div>
+                <div id="mingcheng">马钢</div>
+        </th>
+      </tr>
+
+    </thead>
+    <tbody>
+      <tr >
+        <td id="lashen" colspan="5">静态拉伸</td>
+      </tr>
+      <tr >
+          <td>执行标准</td>
+          <td>GB/T 228-2010</td>
+          <td>GB/T 228-2010</td>
+          <td>GB/T 228-2010</td>
+          <td>GB/T 228-2010</td>
+
+      </tr>
+      <tr>
+            <td>屈服强度Rp(MPa)</td>
+            <td>767</td>
+            <td>786</td>
+            <td>786</td>
+            <td>786</td>
+      </tr>
+      <tr>
+            <td>抗拉强度Rm(MPa)</td>
+            <td>822</td>
+            <td>816</td>
+            <td>822</td>
+            <td>816</td>
+      </tr>
+      <tr>
+            <td>应变硬化指数(n)</td>
+            <td>0.08</td>
+            <td>0.08</td>
+            <td>0.08</td>
+            <td>0.08</td>
+      </tr>
+      <tr>
+            <td>断后伸长率A(%)</td>
+            <td>11.5</td>
+            <td>11</td>
+            <td>11.5</td>
+            <td>11</td>
+      </tr>
+      <tr>
+            <td>塑性应变比(%)</td>
+            <td>0.72</td>
+            <td>0.72</td>
+            <td>0.72</td>
+            <td>0.72</td>
+      </tr>
+      <tr>
+            <td>弹性模量E(MPa)</td>
+            <td>243179.42</td>
+            <td>251345.58</td>
+            <td>243179.42</td>
+            <td>251345.58</td>
+      </tr>
+      <tr>
+            <td>泊松比</td>
+            <td>0.29</td>
+            <td>0.27</td>
+            <td>0.29</td>
+            <td>0.27</td>
+      </tr>
+      <tr>
+            <td>最大力Fm(KN)</td>
+            <td>33.02</td>
+            <td>33.02</td>
+            <td>33.02</td>
+            <td>33.02</td>
+      </tr>
+      <tr >
+            <td id="lashen" colspan="5">物理性能</td>
+          </tr>
+        <tr>
+                <td>执行标准</td>
+                <td>GB/T 228-2010</td>
+                <td>GB/T 228-2010</td>
+                <td>GB/T 228-2010</td>
+                <td>GB/T 228-2010</td>
+        </tr>
+        <tr>
+                <td>维氏硬度(HV)</td>
+                <td>225</td>
+                <td>226</td>
+                <td>263</td>
+                <td>222</td>
+        </tr>
+        <tr>
+                <td>布氏硬度(HBW)</td>
+                <td>220</td>
+                <td>324</td>
+                <td>198</td>
+                <td>222</td>
+        </tr>
+        <tr>
+                <td>洛氏硬度(HRC)</td>
+                <td>22.0</td>
+                <td>32.4</td>
+                <td>1.98</td>
+                <td>22.2</td>
+        </tr>
+        <tr>
+                <td>密度</td>
+                <td>7.9</td>
+                <td>7.8</td>
+                <td></td>
+                <td></td>
+        </tr>
+    </tbody>
+  </nz-table>
+</div>
+</div> 
